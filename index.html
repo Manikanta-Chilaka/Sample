@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #one{
+            transition: ease-out;
+            background-color: lightcoral;
+            height: 100px;
+            transition-duration: 1s;
+            transition-delay: 0.5ms;
+            width: 100px;
+           
+            /* transition-timing-function: ease-in; */
+            
+        }
+        #one:hover{
+            /* transform: translate(100px 100px); */
+           transform: rotate(90deg);
+            border-radius: 50%;
+            /* transform: scale(2); */
+            /* transform: scaleX(2); */
+            transform: translate(100px);
+        }
+        #two{
+            transition: ease-out;
+            background-color: lightblue;
+            height: 100px;
+            width: 100px;
+            transition-delay: 0.5s;
+            transition-duration: 0.5s;
+            translate: skew(15deg);
+            box-shadow: 2px 2px 20px;
+            
+        }
+        #two:hover{
+            transform: rotate(90deg);
+            border-radius: 50%;
+            transform:translateX(100px); 
+            transform: skew(15deg);
+            box-shadow: none;
+        }
+  
+        #three{
+            background-color: lightgreen;
+            height: 50px;
+            width: 50px;
+            transform: skew(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Css</h1>
+    <div id="one">1
+        <div id="three">3</div>
+    </div>
+    <div id="two">2</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
